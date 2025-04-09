@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Default font for the whole body */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-
+/* Keyframes for gradient */
 @keyframes gradientWave {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -21,5 +23,10 @@ body {
 
 .group-hover\:animate-gradient {
   background-size: 200% 200%;
-  animation: gradientAnimation 3s ease infinite;
+  animation: gradientWave 3s ease infinite;
+}
+
+/* Optional: Button-specific font style */
+button {
+  font-family: 'Montserrat', sans-serif;
 }

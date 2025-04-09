@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xl2: "1441px", 
+      },
       fontFamily: {
         signature: ["Dancing Script", "cursive"],
       },
@@ -25,5 +28,4 @@ module.exports = {
     },
   },
   plugins: [],
-
 };
